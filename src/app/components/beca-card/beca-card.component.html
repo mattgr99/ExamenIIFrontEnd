@@ -1,0 +1,89 @@
+
+<br>
+<br>
+<div class="container">
+    <div class="d-flex justify-content-around">
+     <div class="media">
+          <div class="media-left">
+              <fa-icon class="mr-3 fa-2x" [icon]='faBook'></fa-icon>
+          </div>
+          <div class="media-body">
+              <small class="media-heading">Periodo Academico</small>
+              <p class="h6"><strong>{{beca.periodo}}</strong></p>
+          </div>
+      </div>
+        <div class="media">
+            <div class="media-left">
+                <fa-icon class="mr-3 fa-2x" [icon]='faIdCard'></fa-icon>
+            </div>
+            <div class="media-body">
+                <small class="media-heading">Cédula</small>
+                <p class="h6"><strong>{{beca.cedula}}</strong></p>
+            </div>
+        </div>  
+        <div class="media">
+            <div class="media-left">
+                <fa-icon class="mr-3 fa-2x" [icon]='faIdCard'></fa-icon>
+            </div>
+            <div class="media-body">
+                <small class="media-heading">Id</small>
+                <p class="h6"><strong>{{beca.idestudiante}}</strong></p>
+            </div>
+        </div>  
+        <div class="media">
+            <div class="media-left">
+                <fa-icon class="mr-3 fa-2x" [icon]='faUser'></fa-icon>
+            </div>
+            <div class="media-body">
+                <small class="media-heading">Nombres</small>
+                <p class="h6"><strong>{{beca.nombres }}</strong></p>
+            </div>
+        </div>        
+        <div class="media">
+            <div class="media-left">
+                <fa-icon class="mr-3 fa-2x" [icon]='faUser'></fa-icon>
+            </div>
+            <div class="media-body">
+                <small class="media-heading">Apellidos</small>
+                <p class="h6"><strong>{{beca.apellidos }}</strong></p>
+            </div>
+        </div>
+        
+    </div>
+<hr>
+    <div class="d-flex justify-content-around">
+        
+                
+        <div class="media">
+            <div class="media-left">
+                <fa-icon class="mr-3 fa-2x" [icon]='faMapMarked'></fa-icon>
+            </div>
+            <div class="media-body">
+                <small class="media-heading">Tipo de Beca</small>  
+                <p class="h6"><strong>{{beca.tipo_beca }}</strong></p>
+            </div>
+        </div>
+        <div class="media">
+          <div class="media-left">
+              <fa-icon class="mr-3 fa-2x" [icon]='faCalendar'></fa-icon>
+          </div>
+          <div class="media-body">
+              <small class="media-heading">Fecha de registro</small>
+              <p class="h6"><strong>{{beca.fecha | date : 'longDate' }}</strong></p>
+          </div>
+      </div>        
+    </div>
+    <div class="d-flex justify-content-around">
+        
+                
+        
+        <div class="media">
+          <div class="media-left">
+              <fa-icon class="mr-3 fa-2x" [icon]='faCashRegister'></fa-icon>
+          </div>
+          <div class="media-body">
+              <small class="media-heading">Numero de Cuenta Bancaria</small>
+              <p class="h6"><strong>{{beca.cuenta_bancaria }}</strong></p>
+          </div>
+      </div>        
+    </div>
